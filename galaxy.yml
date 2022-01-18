@@ -1,0 +1,32 @@
+namespace: dseeley
+
+name: inventory_lookup
+
+version: AUTOFILLED_BY_JENKINS
+
+readme: README.md
+
+authors:
+- Dougal Seeley <github@dougalseeley.com>
+
+description: An Ansible plugin to load an inventory plugin as a lookup.
+
+#license:
+#- BSD-3-Clause
+
+license_file: 'LICENSE'
+
+tags: ['cloud', 'system']
+
+dependencies: {}
+
+repository: https://github.com/dseeley/inventory_lookup
+
+documentation: https://github.com/dseeley/inventory_lookup/blob/master/README.md
+
+homepage: https://github.com/dseeley/inventory_lookup
+
+issues: https://github.com/dseeley/inventory_lookup/issues
+
+build_ignore: [ '.idea', '.gitignore' ]
+

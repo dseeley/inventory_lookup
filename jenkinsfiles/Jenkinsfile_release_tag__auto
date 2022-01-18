@@ -1,0 +1,7 @@
+#!groovy
+
+node {
+    stage('Call inventory_lookup/inventory_lookup-release-tag') {
+        build job: 'inventory_lookup/inventory_lookup-release-tag', parameters: [string(name: 'NEW_VERSION', value: "next")]
+    }
+}
