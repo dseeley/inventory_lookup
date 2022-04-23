@@ -2,7 +2,7 @@ namespace: dseeley
 
 name: inventory_lookup
 
-version: AUTOFILLED_BY_JENKINS
+version: 0.0.0       # This is automatically filled by Jenkins on galaxy release with the current git release tag number.
 
 readme: README.md
 
@@ -16,7 +16,7 @@ description: An Ansible plugin to load an inventory plugin as a lookup.
 
 license_file: 'LICENSE'
 
-tags: ['cloud', 'system']
+tags: ['cloud', 'system', 'inventory']
 
 dependencies: {}
 
