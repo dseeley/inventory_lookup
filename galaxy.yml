@@ -9,7 +9,7 @@ readme: README.md
 authors:
 - Dougal Seeley <github@dougalseeley.com>
 
-description: An Ansible plugin to load an inventory plugin as a lookup.
+description: An Ansible plugin to load an inventory plugin as a lookup.  Enables loading dynamic inventory straight into the playbook inventory.
 
 #license:
 #- BSD-3-Clause
