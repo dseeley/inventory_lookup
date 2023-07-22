@@ -17,9 +17,9 @@ This is run as an Ansible lookup:
       hostnames: ['config.name']
       keyed_groups: []
 
-- name: Get dseeley.libvirt inventory info
+- name: Get community.libvirt inventory info
   debug:
-    msg: "{{ lookup('dseeley.inventory_lookup.inventory', 'dseeley.libvirt.libvirt', plugin_options=params) }}"
+    msg: "{{ lookup('dseeley.inventory_lookup.inventory', 'community.libvirt.libvirt', plugin_options=params) }}"
   vars:
     params:
       uri: 'qemu+ssh://{{ username }}@{{ libvirt_ip }}/system?keyfile=id_rsa'
@@ -37,7 +37,7 @@ This is run as an Ansible lookup:
 
 - name: Get proxmox inventory info
   debug:
-    msg: "{{ lookup('inventory_plugin', 'community.general.proxmox', plugin_options=params) }}"
+    msg: "{{ lookup('dseeley.inventory_lookup.inventory', 'community.general.proxmox', plugin_options=params) }}"
   vars:
     params:
       url: "https://192.168.1.70:8006"

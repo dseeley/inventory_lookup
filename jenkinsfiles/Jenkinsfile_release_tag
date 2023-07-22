@@ -76,7 +76,7 @@ node {
         }
 
         /*** Create a custom docker image within this Jenkinsfile ***/
-        create_custom_image("ubuntu_ansible_${params.ANSIBLE_VERSION}", "").inside("--init ${docker_parent_net_str}") {
+        create_custom_image("ubuntu_ansible${params.ANSIBLE_VERSION}", "").inside("--init ${docker_parent_net_str}") {
             def new_tag_version = params.NEW_VERSION
             stage('Create new version') {
                 withCredentials([usernamePassword(credentialsId: params.GIT_CREDS, usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
