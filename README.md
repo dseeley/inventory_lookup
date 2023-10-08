@@ -13,7 +13,7 @@ This is run as an Ansible lookup:
       hostname: "{{ esxi_ip }}"
       username: "{{ esxi_username }}"
       password: "{{ esxi_password }}"
-      validate_certs: False
+      validate_certs: false
       hostnames: ['config.name']
       keyed_groups: []
 
@@ -32,7 +32,7 @@ This is run as an Ansible lookup:
       aws_access_key: "{{ aws_access_key }}"
       aws_secret_key: "{{ aws_secret_key }}"
       region: "{{ region }}"
-      validate_certs: False
+      validate_certs: false
       keyed_groups: []
 
 - name: Get proxmox inventory info
@@ -43,6 +43,6 @@ This is run as an Ansible lookup:
       url: "https://192.168.1.70:8006"
       user: root@pam
       password: 'PASSWD'
-      validate_certs: False
-      want_facts: yes
+      validate_certs: false
+      want_facts: true
 ```
